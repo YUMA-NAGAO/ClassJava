@@ -16,7 +16,6 @@ public class ArrayListSample {
         output(list);
         list.remove(list.indexOf("沼津高専"));
         output(list);
-        output(list);
     }
 
     public static void output(ArrayList<String> list) {
