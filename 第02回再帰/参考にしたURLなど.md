@@ -1,0 +1,6 @@
+1. [Javaのreturn文の使い方を現役エンジニアが解説【初心者向け】](https://techacademy.jp/magazine/22242)
+1. [戻り値を使ってメソッドから値を返す](https://www.javadrive.jp/start/method/index5.html)
+1. [Javaの演算子エラー](https://teratail.com/questions/196835)
+1. [プログラムができない人用の再帰関数](https://qiita.com/nomunomu0504/items/125483f57b0ecc69ab82)
+1. [Pythonで再帰関数を作る方法【初心者向け】](https://techacademy.jp/magazine/19308)
+1. [衰えか･･･](http://sapphire.hatenadiary.com/entry/20100604/1275661981)
