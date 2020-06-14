@@ -9,8 +9,10 @@ public class hanoi {
     static void hanoi(int n, String start, String goal, String task) {
         if (n > 1) {
             hanoi(n - 1, start, task, goal);
+            // 開始棒から作業棒への移動
             System.out.println(n + ":" + start + " - > " + goal);
             hanoi(n - 1, task, goal, start);
+            // 作業棒から目的棒への移動
         } else {
             System.out.println(n + ":" + start + " - > " + goal);
 
