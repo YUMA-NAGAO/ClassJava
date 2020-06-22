@@ -5,14 +5,21 @@ public class NodeTest {
     public static void main(String[] args) {
         NodeTest tes = new NodeTest();
         NodeList list = tes.new NodeList();
-        list.insertFirst("AAA");
-        list.insertFirst("BBB");
-        list.insertFirst("CCC");
-        list.insertFirst("DDD");
-        list.insertFirst("EEE");
-        list.insertFirst("FFF");
+        String a = "AAA";
+        String b = "BBB";
+        String c = "CCC";
+        String d = "DDD";
+        String e = "EEE";
+        String f = "FFF";
+
+        list.insertFirst("{}".format(a));
+        list.insertFirst("{}".format(b));
+        list.insertFirst("{}".format(c));
+        list.insertFirst("{}".format(d));
+        list.insertFirst("{}".format(e));
+        list.insertFirst("{}".format(f));
         list.displayNodeList();
-        System.out.println(list.find("CCC"));
+        System.out.println(list.find("{}".format(c)));
         list.deleteFirst();
         list.displayNodeList();
         for (int z = 0; z < 5; z += 1) {
