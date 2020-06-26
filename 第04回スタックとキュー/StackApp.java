@@ -1,16 +1,25 @@
 package 第04回スタックとキュー;
 
-import java.util.ArrayList;
-
 public class StackApp {
 
     public static void main(String[] args) {
         StackApp tes = new StackApp();
-        Stack obj = tes.new Stack();
+        Stack obj = tes.new Stack(5);
+        obj.push(2);
+        obj.push(3);
+        obj.push(1);
+        obj.push(5);
+        obj.push(6);
+
+        while (!obj.isEmpty()) {
+            System.out.println(obj.peek());
+            obj.pop();
+        }
 
     }
 
     class Stack {
+
         // 属性
         private int maxSize;
         private int[] stackArray;
@@ -41,13 +50,6 @@ public class StackApp {
 
         public boolean isFull() {
             return (top == maxSize - 1);
-        }
-
-        public static void output(ArrayList<String> list) {
-            System.out.println(list.size());
-            for (int i = 0; i < list.size(); i++) {
-                System.out.println(list.get(i));
-            }
         }
 
     }

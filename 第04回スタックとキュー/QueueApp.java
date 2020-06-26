@@ -3,8 +3,29 @@ package 第04回スタックとキュー;
 public class QueueApp {
 
     public static void main(String[] args) {
-        QueueApp App1 = new QueueApp();
-        Queue obj = App1.new Queue();
+        QueueApp tes = new QueueApp();
+        Queue obj = tes.new Queue(5);
+        obj.enqueue(2);
+        obj.enqueue(3);
+        obj.enqueue(1);
+        obj.enqueue(5);
+        obj.enqueue(6);
+
+        for (int z = 0; z < 3; z += 1) {
+            System.out.println(obj.peek());
+            obj.dequeue();
+        }
+        System.out.println("-------------------------");
+
+        obj.enqueue(2);
+        obj.enqueue(3);
+        obj.enqueue(1);
+        obj.enqueue(722);
+
+        while (!obj.isEmpty()) {
+            System.out.println(obj.peek());
+            obj.dequeue();
+        }
     }
 
     class Queue {
@@ -55,4 +76,5 @@ public class QueueApp {
         }
 
     }
+
 }
