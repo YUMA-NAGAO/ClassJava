@@ -16,7 +16,7 @@ public class QueueApp {
         }
         // 差をわかりやすくするために、一文を入れる。
         System.out.println("-------------------------");
-
+        System.out.println(obj.isFull());
         obj.enqueue(2);
         obj.enqueue(3);
         obj.enqueue(1);
@@ -52,8 +52,11 @@ class Queue {
         if (rear == maxSize - 1) {
             rear = -1;
         }
-        queueArray[++rear] = dt;
-        nItems++;
+        if (!isFull()) {
+            queueArray[++rear] = dt;
+            nItems++;
+
+        }
 
     }
 
