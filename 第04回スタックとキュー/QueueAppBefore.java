@@ -1,6 +1,6 @@
 package 第04回スタックとキュー;
 
-public class QueueApp {
+public class QueueAppBefore {
 
     public static void main(String[] args) {
         Queue obj = new Queue(5);
@@ -16,17 +16,18 @@ public class QueueApp {
         }
         // 差をわかりやすくするために、一文を入れる。
         System.out.println("-------------------------");
-        System.out.println(obj.isFull());
-        obj.enqueue(533);
-        obj.enqueue(35);
-        obj.enqueue(51);
+        obj.enqueue(2);
+        obj.enqueue(3);
+        obj.enqueue(1);
         obj.enqueue(722);
 
         // isEmptyの返り値が空では無いとき、Trueなので、無限ループにするために！を付けて無限ループにした
         while (!obj.isEmpty()) {
             System.out.println(obj.peek());
             obj.dequeue();
+
         }
+
     }
 
 }
@@ -52,7 +53,6 @@ class Queue {
         if (rear == maxSize - 1) {
             rear = -1;
         }
-        // iキューの領域の値が、最大の時に、値を入力できない仕様にした。
         if (!isFull()) {
             queueArray[++rear] = dt;
             nItems++;
