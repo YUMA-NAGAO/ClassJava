@@ -1,6 +1,6 @@
 package 第05回探索;
 
-public class SearchLiner {
+public class SearchTest {
     public static void main(String[] args) {
         int arraydata = 5;
         SearchArray array1 = new SearchArray(arraydata);
@@ -26,5 +26,4 @@ public class SearchLiner {
         System.out.println(array2.binarySerach(20));
 
     }
-
 }
