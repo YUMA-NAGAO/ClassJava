@@ -41,16 +41,16 @@ public class SearchArray {
             middle = Math.round((start + end) / 2);
             System.out.println("開始位置 = " + start + ", 中央位置 = " + middle + "終了位置 = " + end);
 
-            if (array[middle] > data) {
+            if (array[middle] == data) {
+                System.out.println("見つかりました");
+                location = middle;
+            } else if (array[middle] > data) {
                 System.out.println("中央より左側にありそうです");
                 end = middle - 1;
 
-            } else if (array[middle] < data) {
+            } else {
                 System.out.println("中央より右側にありそうです");
                 start = middle + 1;
-            } else if (array[middle] == data) {
-                System.out.println("見つかりました");
-                location = middle;
             }
         }
         return location;
