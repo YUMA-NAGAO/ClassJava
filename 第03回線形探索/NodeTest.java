@@ -12,14 +12,14 @@ public class NodeTest {
         String e = "EEE";
         String f = "FFF";
 
-        list.insertFirst("{}".format(a));
-        list.insertFirst("{}".format(b));
-        list.insertFirst("{}".format(c));
-        list.insertFirst("{}".format(d));
-        list.insertFirst("{}".format(e));
-        list.insertFirst("{}".format(f));
+        list.insertFirst(String.format(a));
+        list.insertFirst(String.format(b));
+        list.insertFirst(String.format(c));
+        list.insertFirst(String.format(d));
+        list.insertFirst(String.format(e));
+        list.insertFirst(String.format(f));
         list.displayNodeList();
-        System.out.println(list.find("{}".format(c)));
+        System.out.println(list.find(String.format(c)));
         list.deleteFirst();
         list.displayNodeList();
         for (int z = 0; z < 5; z += 1) {
