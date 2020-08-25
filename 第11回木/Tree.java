@@ -37,6 +37,8 @@ public class Tree {
         Node p = root;
         while (p != null) {
             if (p.getText().equals(text) == true) {
+                System.out.printf("見つかりました。%s id=%d\n", p.getText(), p.getId());
+
                 break;
             } else if (p.getText().compareTo(text) > 0) {
                 p = p.getLeft();
@@ -44,6 +46,11 @@ public class Tree {
                 p = p.getRight();
             }
         }
+        if (p == null) {
+            System.out.println("見つかりません。");
+
+        }
+
         return p;
     }
 

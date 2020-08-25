@@ -10,19 +10,8 @@ public class TreeApp {
         }
         t.print(t.getRoot());
 
-        Node tmp = t.search("Tanaka");
-        Node tes = t.search("text");
-        if (tmp != null) {
-            System.out.printf("見つかりました。%s id=%d\n", tmp.getText(), tmp.getId());
+        t.search("Tanaka");
+        t.search("text");
 
-        } else {
-            System.out.println("見つかりません。");
-        }
-        if (tes != null) {
-            System.out.printf("見つかりました。%s id=%d\n", tmp.getText(), tmp.getId());
-
-        } else {
-            System.out.println("見つかりません。");
-        }
     }
 }
